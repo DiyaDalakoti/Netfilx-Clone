@@ -1,0 +1,286 @@
+*{                                    /*  "*" selector is used to select all the elements in the document */
+    margin: 0;                         /* to remove the default padding and margin */
+    padding:0;
+}
+
+.top-header,.body-section,.faq-container{
+    border-bottom: 10px solid #232323;
+}
+.top-header{
+    height: 100vh;           /*80vh---80% of view put height-----the height which we are able to see from top to bottom of the screen*/
+    background-image:url(./background.jpg);
+}
+
+html{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+.container{
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);      /* in rgba a is alpha which decides opacity....0 is transparent and 1 is opaque*/
+}
+
+.navbar{
+    margin:0px 200px;
+    padding-top:30px;
+    display: flex;
+    justify-content:space-between;           /* to have both on each ends */
+}
+
+.right-half{
+    display:flex;
+    gap:40px;          /*to give gap between signin and language*/
+    align-items: center;
+}
+
+.dropdown-container{
+    position:relative;
+}
+
+.language{
+    left:5px;
+}
+.language,.drop-down{
+    position:absolute;
+    top:9px;
+}
+
+.drop-down{
+    right:0px;
+    top:8px;
+}
+
+.language-picker{
+    color:white ;
+    padding:10px 30px;
+    background-color:rgba(27, 26, 26, 0.781);
+    font-size:18px;
+    border-radius:5px;
+    
+}
+
+.btn{
+    background-color:#E50914;
+    color:white;
+    padding:0px 10px;
+    border:none;
+    border-radius:5px;
+    padding:10px 18px;
+    font-size:18px;
+    
+}
+.btn:hover{
+    background-color: #f12d37;
+}
+
+/*header content style*/
+.content{
+    margin:33vh auto;
+    width:75%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1,.content p{
+    margin-top:20px;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight:900;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.content p{
+    font-size:25px;
+}
+
+.email-container{
+    display: flex;
+    gap:20px;
+    width:50%;
+    margin-top:20px;
+    
+}
+
+.email-container>input{
+    flex-grow:1;   
+    background-color:#474c5675;
+    border: 1px solid #2BB871;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.get-started-btn{
+    display: flex;
+    align-items: center;
+    border:none;
+    font-size: 40px;
+}
+
+
+.get-started-btn>span{
+    font-size:40px;
+}
+
+/*Body section*/
+.body-section{
+    margin:70px 0px;
+    display:flex;
+    align-items: center;
+    padding:40px 200px;
+    gap:10px;
+
+}
+
+.right-half{
+    position:relative;
+    bottom:20%;
+}
+
+.right-half >video{
+    position:absolute;
+    left:84px;
+    top:21%;
+    height: 262px;
+    z-index:-1;      /* z value decides how close or far the item is from us*/
+}
+.left-half{
+    width:70%; 
+}
+
+.left-half h1,.right-half h1{
+    font-size:55px; 
+    margin-bottom: 20px;  
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+}
+
+.left-half p,.right-half p{
+    font-size: 30px;
+}
+
+.layout{
+    border:4px solid #585858;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    bottom:0;                 /* so that the layout portion will be at 0 distance from the bottom*/
+    left:23%;
+    width: 50%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+    padding: 13px;
+    margin-bottom: 37px;
+}
+
+.layout img{
+    width:70px;
+}
+
+.layout p{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout span{
+    color: blue;
+}
+.sec2-left{
+    position:relative;
+    margin-bottom: 3%;
+}
+
+.sec2-right{
+    display: flex;
+    flex-direction: column;
+}
+.sec2-right h1{
+    width:550px;
+    margin:0;
+}
+
+.sec2-right p{
+    padding-left: 40px;
+}
+
+.sec3-right video{
+    width:400px;
+    top:8%;
+    left:18%;
+}
+
+.sec3-left{
+    width: 600px;
+}
+
+.faq-container{
+    padding:40px 100px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.faq-container h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.faq{
+    display:flex;
+    justify-content:space-between;
+    align-self: stretch;
+    font-size: 30px;
+    background-color: #2D2D2D;
+    margin-left:70px;
+    margin-bottom: 10px;
+    padding:27px;
+    transition-duration: 0.5s;
+}
+
+.faq span{
+    font-size: 60px;
+}
+
+.faq:hover{
+    background-color:#474545;
+}
+
+.para{
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+/*footer styles*/
+.footer-container{
+    padding: 100px;
+}
+
+.footer-container,.footer-container a{
+    color: #B3B3B3;
+    font-size: 18px;
+}
+
+.footer-container p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.links-container{
+    display: flex;
+    gap:200px;
+    justify-content: flex-start;
+}
+
+.links-items{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
