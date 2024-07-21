@@ -1,4 +1,4 @@
-# Netfilx-Clone
+# Netflix-Clone
 This project is a simple clone of the Netflix built using HTML and CSS. The goal of this project is to practice web development skills by recreating a familiar user interface.
 
 ## Technologies Used
